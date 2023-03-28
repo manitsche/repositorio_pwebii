@@ -2,5 +2,3 @@
 
 ### Aluno: Marco Antonio Nitsche
 ### Turma: 2° TADS
-
-## Links para as atividades
