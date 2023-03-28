@@ -1,0 +1,87 @@
+* { /* Altera todos os elementos da página */
+  margin: 0;
+  padding: 0; /* Define uma a distância entre o conteúdo de um elemento e suas bordas */
+  box-sizing: border-box; /* Altera a propriedade padrão da box model (formato de caixa em que a calculadora está inserida) */
+  font-family: Helvetica;
+}
+
+body { /* Corpo da página */
+  background-color: #333;
+  display: flex; /* Define os tipos de exibição internos e externos de um elemento */
+  align-items: center;
+  justify-content: center;
+  padding: 3em;
+}
+
+#calc {
+  width: 400px;
+  padding: 0.5em;
+  background-color: #c4c4c4;
+  color: #000;
+  display: flex;
+  flex-direction: column; /* Especifica a direção de ítens flexíveis */
+}
+
+#calc h3 {
+  font-size: 0.8em;
+  font-weight: 300;
+  color: #666;
+}
+
+#operations {
+  text-align: right;
+}
+
+#previous-operation {
+  color: #777;
+  padding: 0.2em;
+  overflow-wrap: break-word; /* Expecifíca que o navegador pode quebrar linhas de texto dentro de qualquer elemento de destino */
+  min-height: 1.6em;
+}
+
+#current-operation {
+  min-height: 1.6em;
+  font-size: 3em;
+  font-weight: 700;
+  padding: 0.2em;
+  overflow-wrap: break-word;
+}
+
+#buttons-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr; /* Define o número total de colunas que serão criadas no grid */
+  gap: 3px;
+}
+
+#buttons-container button {
+  border: 1px solid transparent;
+  border-radius: 0;
+  height: 4em;
+  font-size: 1.2em;
+  background-color: #dbdbdb;
+  cursor: pointer;
+}
+
+#buttons-container .number { /* Altera todos os elementos da classe number */
+  background-color: #f3f3f3;
+}
+
+#buttons-container button:hover {
+  background-color: #bababa;
+  border-color: #999;
+}
+
+#buttons-container #equal-btn { /* Botão de igual */ 
+  grid-column: span 2; /* Coluna */
+  background-color: #75a5cb;
+}
+
+#buttons-container #equal-btn:hover {
+  grid-column: span 2;
+  background-color: #3a91d8;
+}
+
+#buttons-container #init-btn { /* Atribui a cor vermelha ao primeiro botão */
+    background-color: red;
+    border-color: #999;
+}
