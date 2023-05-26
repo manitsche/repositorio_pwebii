@@ -13,7 +13,7 @@ wsl --update
 ## 2 - Com o Docker instalado:
 Executar a seguinte sequência de comandos, no terminal do proprio vscode:
 
-1
+**1**
 
 ~~~
 npm install
@@ -21,7 +21,7 @@ npm install
 
 Esse comando é usado para instalar as dependências do projeto Node.js a partir do arquivo package.json. Ele lê as informações de dependência definidas no arquivo e baixa e instala todas as dependências necessárias na pasta node_modules.
 
-2
+**2**
 
 ~~~
 npm install -g yarn
@@ -29,7 +29,7 @@ npm install -g yarn
 
 Esse comando é usado para instalar o Yarn globalmente no sistema. O Yarn é um gerenciador de pacotes alternativo ao npm.
 
-3
+**3**
 
 ~~~
 docker run --name mongodb -d -p 27017:27017 mongo
@@ -37,7 +37,7 @@ docker run --name mongodb -d -p 27017:27017 mongo
 
 Esse comando é usado para executar um contêiner Docker com uma instância do MongoDB. Ele cria e inicia um contêiner chamado "mongodb". 
 
-4
+**4**
 
 ~~~
 yarn dev
@@ -47,7 +47,8 @@ Esse comando é usado para iniciar o servidor de desenvolvimento do projeto.
 
 ------------------------------------------------------------------------------
 
-** Passo extra:
+**Passo extra:**
+
 Esse passo deve ser realizado caso o comando yarn dev apresente o seguinte erro ao ser executado pela primeira vez no terminal do vscode:
 
 ~~~
@@ -101,8 +102,10 @@ localhost:3000/categories
 
 Após isso, podemos clicar no botão Send na requisição Add Category, para adicionar o exemplo de pizza como uma categoria, e depois, clicar no botão Send na requisição List Category para listar todas as categorias já criadas.
 
-** Imagens das requisições funcionando:
+**Imagens das requisições funcionando:**
 
 ![imagem_get_listcategories](Assets/imagem_get_listcategories.png)
 
 ![imagem_post_addcategory](Assets/imagem_post_addcategory.png)
+
+[Link direto para a pasta do projeto](https://github.com/manitsche/repositorio_pwebii/tree/master/Aula%2025032023%20-%20AppFood%20com%20README.md%20e%20requisi%C3%A7%C3%B5es/AppFood)
