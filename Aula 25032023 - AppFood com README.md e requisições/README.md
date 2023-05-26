@@ -47,7 +47,7 @@ Esse comando é usado para iniciar o servidor de desenvolvimento do projeto.
 
 ------------------------------------------------------------------------------
 
-**Passo extra:
+** Passo extra:
 Esse passo deve ser realizado caso o comando yarn dev apresente o seguinte erro ao ser executado pela primeira vez no terminal do vscode:
 
 ~~~
@@ -101,7 +101,7 @@ localhost:3000/categories
 
 Após isso, podemos clicar no botão Send na requisição Add Category, para adicionar o exemplo de pizza como uma categoria, e depois, clicar no botão Send na requisição List Category para listar todas as categorias já criadas.
 
-**Imagens das requisições funcionando:
+** Imagens das requisições funcionando:
 
 ![imagem_get_listcategories](Assets/imagem_get_listcategories.png)
 
