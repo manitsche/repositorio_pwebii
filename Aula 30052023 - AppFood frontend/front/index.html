@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="style.css">
+    <title>Cadastro | AppFood</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="container">
+            <div class="title">Módulo de cadastro AppFood</div>
+            <div class="tabs_wrap">
+                <ul>
+                    <li data-tabs="categoria" class="active">Categoria</li>
+                    <li data-tabs="produto" class="">Produto</li>
+                </ul>
+            </div>
+            <form enctype="multipart/form-data">
+                <!-- Aba de categoria -->
+                <div class="form_section categoria">
+                    <div class="form_item">
+                        <label for="nomeCategoria">Nome:</label>
+                        <input type="text" id="nomeCategoria" class="input_full_width" name="name">
+                    </div>
+                    <div class="form_item">
+                        <label for="iconeCategoria">Ícone:</label>
+                        <input type="text" id="iconeCategoria" class="input_full_width" name="icon">
+                    </div>
+                    <div class="button_container">
+                        <button id="enviarCategoria" class="button_margin">Enviar</button>
+                    </div>
+                </div>
+
+                <!-- Aba de produto -->
+                <div class="form_section produto">
+                    <div class="form_item">
+                        <label for="nomeProduto">Nome:</label>
+                        <input type="text" id="nomeProduto" class="input_full_width" name="name">
+                    </div>
+                    <div class="form_item">
+                        <label for="descricaoProduto">Descrição:</label>
+                        <input type="text" id="descricaoProduto" class="input_full_width" name="description">
+                    </div>
+                    <div class="form_item">
+                        <label for="imagemProduto">Imagem:</label>
+                        <input type="file" id="imagemProduto" accept="image/png, image/gif, image/jpeg" class="input_full_width" name="imagePath">
+                    </div>
+                    <div class="form_item">
+                        <label for="precoProduto">Preço:</label>
+                        <input type="text" id="precoProduto" class="input_full_width" name="price">
+                    </div>
+                    <hr>
+                    <h3 class="titleCategoria" style="text-align: center;">Categoria</h3>
+                    <div class="form_item">
+                        <label for="categoriaProduto">Nome:</label>
+                        <select id="categoriaProduto" class="input_full_width"></select>
+                    </div>
+                    <div class="form_item">
+                        <label for="categoriaProdutoIcone">Ícone:</label>
+                        <input type="text" id="categoriaProdutoIcone" readonly class="input_full_width">
+                    </div>
+                    <div class="button_container">
+                        <button id="enviarProduto" class="button_margin">Enviar</button>
+                    </div>
+                </div>
+            </form>
+            <footer>Marco Antonio Nitsche &#169; 2023</footer>
+        </div>
+    </div>
+    <script src="script.js" defer></script>
+</body>
+</html>

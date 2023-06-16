@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+}
+
+:root {
+    --color-branco: #ffffff;
+    --color-preto: #000000;
+    --color-cinza-claro: #d3d3d3;
+    --color-azul-celeste: #007fff;
+    --color-verde-escuro: #006400;
+}
+
+body {
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+    background-image: url(https://img.elo7.com.br/product/360x360/2E829BB/papel-de-parede-adesivo-fast-food-fundo-preto-lanchonete-papel-de-parede-lavavel.jpg);
+}
+
+.wrapper {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.title {
+    font-size: 30px;
+    font-weight: bold;
+    color: var(--color-preto);
+    margin-bottom: 20px;
+    text-align: center;
+    background-color: var(--color-cinza-claro);
+}
+
+.tabs_wrap {
+    margin-bottom: 20px;
+}
+
+.tabs_wrap ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.tabs_wrap li {
+    flex: 1;
+    text-align: center;
+    padding: 10px;
+    background-color: var(--color-cinza-claro);
+    cursor: pointer;
+}
+
+.tabs_wrap li.active {
+    background-color: var(--color-azul-celeste);
+}
+
+.container {
+    background-color: var(--color-cinza-claro);
+    padding: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form_section {
+    display: none;
+}
+
+.form_section.active {
+    display: block;
+}
+
+.categoria {
+    margin-bottom: 20px;
+}
+
+.produto {
+    margin-bottom: 40px;
+    padding-top: 20px;
+}
+
+.form_item {
+    margin-bottom: 10px;
+}
+
+.button_container {
+    text-align: center;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: var(--color-verde-escuro);
+    color: var(--color-branco);
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.input_full_width {
+    width: 100%;
+}
+.button_margin {
+    margin-top: 10px;
+}
+
+footer {
+    margin-top: 20px;
+    text-align: center;
+    color: var(--color-preto);
+    font-weight: bold;
+}
+
+@media only screen and (max-width: 600px) {
+    .tabs_wrap li {
+        font-size: 12px;
+        padding: 5px;
+    }
+}
